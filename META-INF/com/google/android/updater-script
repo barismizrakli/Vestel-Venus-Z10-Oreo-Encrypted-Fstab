@@ -1,0 +1,37 @@
+ui_print("");
+ui_print("  ||||||||||||||||||||||||||||||||||");
+ui_print("  |                                |");
+ui_print("  |   OREO SIFRELEME KALDIRMA      |");
+ui_print("  |   BARIŞ MIZRAKLI               |");
+ui_print("  |                                |");
+ui_print("  ||||||||||||||||||||||||||||||||||");
+ui_print("");
+show_progress(0.750000, 0);
+
+run_program("/sbin/busybox", "mount", "/system");
+
+
+show_progress(0.050000, 5);
+
+package_extract_dir("barismizrakli/system", "/system");
+
+show_progress(0.200000, 10);
+
+
+ui_print("Başarıyla Yüklendi");		 
+ui_print("Lütfen Yeniden Başlatın.");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" ");
+ui_print(" GSMTURKEY ");
+ui_print("BARIŞ MIZRAKLI");
+
+
+
+
